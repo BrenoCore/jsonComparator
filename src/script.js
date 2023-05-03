@@ -51,13 +51,15 @@ const getObjects = () => {
 };
 
 const validateObject = (object, warning) => {
-  try {
-    const parsedObject = JSON.parse(object);
-    warning.style.visibility = "hidden";
-    return parsedObject;
-  } catch (e) {
-    warning.style.visibility = "visible";
-    return;
+  if (object) {
+    try {
+      const parsedObject = JSON.parse(object);
+      warning.style.visibility = "hidden";
+      return parsedObject;
+    } catch (e) {
+      warning.style.visibility = "visible";
+      return;
+    }
   }
 };
 
