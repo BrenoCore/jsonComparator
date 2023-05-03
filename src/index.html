@@ -10,15 +10,19 @@
 
 <body>
   <h1>Object Comparison</h1>
+  <label class="switch">
+    <input type="checkbox" id="darkModeToggle">
+    <span class="slider round"></span>
+  </label>
   <div class="textAreaWrapper">
+    <p id="warning1" class="warning-message">Invalid JSON</p>
     <textarea id="object1" placeholder="Enter object 1 as JSON"></textarea>
   </div>
   <div class="textAreaWrapper">
+    <p id="warning2" class="warning-message">Invalid JSON</p>
     <textarea id="object2" placeholder="Enter object 2 as JSON"></textarea>
   </div>
-  <button id="compareButton">Compare Objects</button>
   <div class="differences" id="differences"></div>
-  
   <script src="script.js"></script>
 </body>
 
