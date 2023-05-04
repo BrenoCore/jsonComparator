@@ -14,13 +14,15 @@
     <input type="checkbox" id="darkModeToggle">
     <span class="slider round"></span>
   </label>
-  <div class="textAreaWrapper">
+  <div id="wrapper1" class="textAreaWrapper">
     <p id="warning1" class="warning-message">Invalid JSON</p>
     <textarea id="object1" placeholder="Enter object 1 as JSON"></textarea>
+    <p id="result1" class="missing" hidden></p>
   </div>
-  <div class="textAreaWrapper">
+  <div id="wrapper2" class="textAreaWrapper">
     <p id="warning2" class="warning-message">Invalid JSON</p>
     <textarea id="object2" placeholder="Enter object 2 as JSON"></textarea>
+    <p id="result2" class="missing" hidden></p>
   </div>
   <div class="differences" id="differences"></div>
   <script src="./src/script.js"></script>
