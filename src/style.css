@@ -15,7 +15,6 @@ textarea {
   height: 70vh;
   font-size: 16px;
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 
 button {
@@ -97,11 +96,38 @@ input:checked + .slider:before {
 
 .warning-message {
   width: calc(100% - 15px);
-  background-color: red;
+  background-color: #B33A3A;
   color: white;
   font-weight: bold;
   font-size: 16px;
   padding: 10px;
   border-radius: 5px;
   visibility: hidden;
+}
+
+.missing {
+  width: calc(100% - 15px);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: black solid 1px;
+}
+
+.no-missing {
+  background-color: green;
+  color: #eee;
+  outline: 0px;
+}
+
+body.dark-theme .missing {
+  background-color: #444;
+  color: #eee;
+  outline: 0px;
+}
+
+body.dark-theme .no-missing {
+  background-color: #306844;
+  color: #eee;
+  outline: 0px;
 }

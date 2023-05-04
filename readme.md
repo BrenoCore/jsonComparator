@@ -1,6 +1,6 @@
 # Object Comparison
 
-This Single Page Application (SPA) allows you to compare two JSON objects and displays their structural differences. 
+This SPA allows you to compare two JSON objects and displays their structural differences. 
 
 ## Features
 
